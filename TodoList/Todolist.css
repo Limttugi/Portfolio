@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Brush+Script&family=Nunito+Sans:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Nanum+Brush+Script&family=Nunito+Sans:ital,wght@1,600&display=swap");
 
 * {
   margin: 0;
@@ -17,8 +17,7 @@ body {
 }
 
 header {
-  /* border: 1px solid black; */
-  height: 15%;
+  height: 130px;
 }
 
 header h1 {
@@ -28,9 +27,10 @@ header h1 {
 }
 
 #day_time {
+  font-size: 22px;
   text-align: right;
-  margin-right: 20px;
-  font-size: 18px;
+  padding-right: 10%;
+  font-family: "Bebas Neue", cursive;
 }
 
 .search {
@@ -43,12 +43,21 @@ header h1 {
   padding: 5px;
 }
 
-.search i {
+.search .far {
   position: absolute;
+  top: 50%;
   right: 0;
-  font-size: 18px;
-  padding: 5px;
+  transform: translateY(-50%);
+  width: 30px;
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
   border-left: 1px solid black;
+  cursor: pointer;
+}
+
+.search .far.fa-clock {
+  font-size: 16px;
 }
 
 .todo {
@@ -59,12 +68,10 @@ header h1 {
   left: 50%;
   transform: translateX(-50%);
   justify-content: space-between;
-  /* border: 1px solid black; */
 }
 
 .todo .tdItem {
   width: 50%;
-  /* border: 1px solid black; */
 }
 
 .todo .tdItem h2 {
@@ -82,6 +89,9 @@ header h1 {
 
 .todo .tdItem ul {
   /* border: 1px solid black; */
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
   position: relative;
   width: 70%;
   left: 50%;
@@ -99,4 +109,9 @@ header h1 {
 
 .todo .tdItem ul li:first-child {
   padding-top: 20px;
+}
+
+.todo .tdItem ul li button {
+  position: absolute;
+  right: 0;
 }
