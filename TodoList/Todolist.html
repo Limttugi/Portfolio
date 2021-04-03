@@ -14,14 +14,16 @@
         <h1>JJoonDoList</h1>
         <section id="day_time">
           <article id="day"></article>
-          <article id="time">Time</article>
+          <article id="time"></article>
         </section>
       </header>
 
       <section class="search">
-        <input id="inputList" type="text" placeholder="할 일을 입력후 엔터를 치세요 (20글자가 최대)" onkeyup="enterkey()" maxlength="20" />
+        <input id="inputList" type="text" placeholder="할 일을 입력 후 엔터를 치세요 (20글자가 최대)" onkeyup="enterkey()" maxlength="16" />
+        <input id="def_day" type="date" />
         <i id="switch" class="far fa-clipboard" onclick="switchTodo()"></i>
       </section>
+
       <section class="todo">
         <article class="tdItem">
           <h2>기한 없음!</h2>

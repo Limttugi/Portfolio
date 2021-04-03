@@ -38,15 +38,17 @@ header h1 {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .search input[type="text"] {
   width: 400px;
   padding: 5px;
+  outline: none;
 }
 
 .search .far {
   position: absolute;
-  top: 50%;
   right: 0;
+  top: 50%;
   transform: translateY(-50%);
   width: 30px;
   text-align: center;
@@ -60,10 +62,17 @@ header h1 {
   font-size: 16px;
 }
 
+#def_day {
+  display: none;
+  margin: 0px auto;
+  margin-top: 9px;
+  padding: 2px;
+}
+
 .todo {
   position: absolute;
   display: flex;
-  margin-top: 60px;
+  margin-top: 80px;
   width: 90%;
   left: 50%;
   transform: translateX(-50%);
@@ -88,7 +97,6 @@ header h1 {
 }
 
 .todo .tdItem ul {
-  /* border: 1px solid black; */
   display: flex;
   align-content: flex-start;
   flex-direction: column;
